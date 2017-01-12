@@ -12,6 +12,7 @@
 		F3A818841E27F8E90047A8F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A818821E27F8E90047A8F4 /* Main.storyboard */; };
 		F3A818861E27F8E90047A8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A818851E27F8E90047A8F4 /* Assets.xcassets */; };
 		F3A818891E27F8E90047A8F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A818871E27F8E90047A8F4 /* LaunchScreen.storyboard */; };
+		F3A818911E27F9160047A8F4 /* ColorServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A818901E27F9160047A8F4 /* ColorServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F3A818851E27F8E90047A8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A818881E27F8E90047A8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3A8188A1E27F8E90047A8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A818901E27F9160047A8F4 /* ColorServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F3A8187D1E27F8E90047A8F4 /* MultiPeerWithColor */ = {
 			isa = PBXGroup;
 			children = (
+				F3A818901E27F9160047A8F4 /* ColorServiceManager.swift */,
 				F3A8187E1E27F8E90047A8F4 /* AppDelegate.swift */,
 				F3A818801E27F8E90047A8F4 /* ViewController.swift */,
 				F3A818821E27F8E90047A8F4 /* Main.storyboard */,
@@ -96,7 +99,7 @@
 				TargetAttributes = {
 					F3A8187A1E27F8E90047A8F4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -138,6 +141,7 @@
 			files = (
 				F3A818811E27F8E90047A8F4 /* ViewController.swift in Sources */,
 				F3A8187F1E27F8E90047A8F4 /* AppDelegate.swift in Sources */,
+				F3A818911E27F9160047A8F4 /* ColorServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +262,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MultiPeerWithColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MultiPeerWithColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1509eb80-8f56-4eec-8872-5c9fe51e6e8c";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Provision";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -270,10 +279,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MultiPeerWithColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MultiPeerWithColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1509eb80-8f56-4eec-8872-5c9fe51e6e8c";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Provision";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
